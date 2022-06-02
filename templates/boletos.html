@@ -1,3 +1,4 @@
+{% load humanize %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -55,11 +56,11 @@
 
         <td>{{boleto.partido.estadio}}</td>
         {% if boleto.pagado %}
-        <td>Pagado</td>
+        <td class="text-success">Pagado</td>
         {% else %}
-        <td>Pendiente</td>
+        <td class="text-danger">Pendiente</td>
         {% endif %}
-        <td>{{boleto.fecha_compra}}</td>
+        <td>{{boleto.fecha_compra | naturaltime}}</td>
       </tr>
       {% endfor %}
     </table>
