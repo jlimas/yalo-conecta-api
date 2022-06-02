@@ -17,6 +17,7 @@ class Command(BaseCommand):
                 local = match["HomeTeam"]
                 visitante = match["AwayTeam"]
                 estadio = match["Location"]
+                grupo = match["Group"]
 
                 fixed_datetime = match["DateUtc"][:-1]
                 struct_datetime = time.strptime(fixed_datetime, "%Y-%m-%d %H:%M:%S")
@@ -29,5 +30,6 @@ class Command(BaseCommand):
                     local=local,
                     visitante=visitante,
                     estadio=estadio,
+                    grupo=grupo,
                     fecha=fecha,
                 )

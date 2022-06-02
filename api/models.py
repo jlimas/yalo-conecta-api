@@ -10,24 +10,11 @@ class Usuario(models.Model):
         return self.nombre
 
 
-equipos = (
-    ("Mexico", "Mexico"),
-    ("Guatemala", "Guatemala"),
-    ("Estados Unidos", "Estados Unidos"),
-    ("Canada", "Canada"),
-)
-
-estadios = (
-    ("Estadio Nacional #1", "Estadio Nacional #1"),
-    ("Estadio Nacional #2", "Estadio Nacional #2"),
-    ("Estadio Nacional #3", "Estadio Nacional #3"),
-)
-
-
 class Partido(models.Model):
     local = models.CharField(max_length=100)
     visitante = models.CharField(max_length=100)
     estadio = models.CharField(max_length=100)
+    grupo = models.CharField(max_length=100)
     fecha = models.DateTimeField(default=datetime.now)
 
     def __str__(self):

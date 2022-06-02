@@ -9,7 +9,8 @@ class UsuarioAdmin(admin.ModelAdmin):
 
 @admin.register(models.Partido)
 class PartidoAdmin(admin.ModelAdmin):
-    list_display = ("id", "local", "visitante", "estadio", "fecha")
+    ordering = ("id",)
+    list_display = ("id", "grupo", "local", "visitante", "estadio", "fecha")
 
 
 @admin.register(models.Boleto)
