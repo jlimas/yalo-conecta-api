@@ -6,7 +6,7 @@
     "Location": "Estadio Al Thumama",
     "HomeTeam": "Senegal",
     "AwayTeam": "Netherlands",
-    "Group": "Group A",
+    "Group": "A",
     "HomeTeamScore": null,
     "AwayTeamScore": null
   },
@@ -17,7 +17,7 @@
     "Location": "Estadio Khalifa Internacional",
     "HomeTeam": "England",
     "AwayTeam": "Iran",
-    "Group": "Group B",
+    "Group": "B",
     "HomeTeamScore": null,
     "AwayTeamScore": null
   },
@@ -28,7 +28,7 @@
     "Location": "Estadio Al Bayt",
     "HomeTeam": "Qatar",
     "AwayTeam": "Ecuador",
-    "Group": "Group A",
+    "Group": "A",
     "HomeTeamScore": null,
     "AwayTeamScore": null
   },
@@ -39,7 +39,7 @@
     "Location": "Estadio Ahmad Bin Ali",
     "HomeTeam": "USA",
     "AwayTeam": "Euro Play-off",
-    "Group": "Group B",
+    "Group": "B",
     "HomeTeamScore": null,
     "AwayTeamScore": null
   },
@@ -50,7 +50,7 @@
     "Location": "Estadio Lusail",
     "HomeTeam": "Argentina",
     "AwayTeam": "Saudi Arabia",
-    "Group": "Group C",
+    "Group": "C",
     "HomeTeamScore": null,
     "AwayTeamScore": null
   },
@@ -61,7 +61,7 @@
     "Location": "Estadio Education City",
     "HomeTeam": "Denmark",
     "AwayTeam": "Tunisia",
-    "Group": "Group D",
+    "Group": "D",
     "HomeTeamScore": null,
     "AwayTeamScore": null
   },
@@ -72,7 +72,7 @@
     "Location": "Estadio 974",
     "HomeTeam": "Mexico",
     "AwayTeam": "Poland",
-    "Group": "Group C",
+    "Group": "C",
     "HomeTeamScore": null,
     "AwayTeamScore": null
   },
@@ -83,7 +83,7 @@
     "Location": "Estadio Al Janoub",
     "HomeTeam": "France",
     "AwayTeam": "IC Play-off 1",
-    "Group": "Group D",
+    "Group": "D",
     "HomeTeamScore": null,
     "AwayTeamScore": null
   },
@@ -94,7 +94,7 @@
     "Location": "Estadio Al Bayt",
     "HomeTeam": "Morocco",
     "AwayTeam": "Croatia",
-    "Group": "Group F",
+    "Group": "F",
     "HomeTeamScore": null,
     "AwayTeamScore": null
   },
@@ -105,7 +105,7 @@
     "Location": "Estadio Khalifa Internacional",
     "HomeTeam": "Germany",
     "AwayTeam": "Japan",
-    "Group": "Group E",
+    "Group": "E",
     "HomeTeamScore": null,
     "AwayTeamScore": null
   },
@@ -116,7 +116,7 @@
     "Location": "Estadio Al Thumama",
     "HomeTeam": "Spain",
     "AwayTeam": "IC Play-off 2",
-    "Group": "Group E",
+    "Group": "E",
     "HomeTeamScore": null,
     "AwayTeamScore": null
   },
@@ -127,7 +127,7 @@
     "Location": "Estadio Ahmad Bin Ali",
     "HomeTeam": "Belgium",
     "AwayTeam": "Canada",
-    "Group": "Group F",
+    "Group": "F",
     "HomeTeamScore": null,
     "AwayTeamScore": null
   },
@@ -138,7 +138,7 @@
     "Location": "Estadio Al Janoub",
     "HomeTeam": "Switzerland",
     "AwayTeam": "Cameroon",
-    "Group": "Group G",
+    "Group": "G",
     "HomeTeamScore": null,
     "AwayTeamScore": null
   },
@@ -149,7 +149,7 @@
     "Location": "Estadio Education City",
     "HomeTeam": "Uruguay",
     "AwayTeam": "Korea Republic",
-    "Group": "Group H",
+    "Group": "H",
     "HomeTeamScore": null,
     "AwayTeamScore": null
   },
@@ -160,7 +160,7 @@
     "Location": "Estadio 974",
     "HomeTeam": "Portugal",
     "AwayTeam": "Ghana",
-    "Group": "Group H",
+    "Group": "H",
     "HomeTeamScore": null,
     "AwayTeamScore": null
   },
@@ -171,7 +171,7 @@
     "Location": "Estadio Lusail",
     "HomeTeam": "Brazil",
     "AwayTeam": "Serbia",
-    "Group": "Group G",
+    "Group": "G",
     "HomeTeamScore": null,
     "AwayTeamScore": null
   },
@@ -182,7 +182,7 @@
     "Location": "Estadio Ahmad Bin Ali",
     "HomeTeam": "Euro Play-off",
     "AwayTeam": "Iran",
-    "Group": "Group B",
+    "Group": "B",
     "HomeTeamScore": null,
     "AwayTeamScore": null
   },
@@ -193,7 +193,7 @@
     "Location": "Estadio Al Thumama",
     "HomeTeam": "Qatar",
     "AwayTeam": "Senegal",
-    "Group": "Group A",
+    "Group": "A",
     "HomeTeamScore": null,
     "AwayTeamScore": null
   },
@@ -204,7 +204,7 @@
     "Location": "Estadio Khalifa Internacional",
     "HomeTeam": "Netherlands",
     "AwayTeam": "Ecuador",
-    "Group": "Group A",
+    "Group": "A",
     "HomeTeamScore": null,
     "AwayTeamScore": null
   },
@@ -215,7 +215,7 @@
     "Location": "Estadio Al Bayt",
     "HomeTeam": "England",
     "AwayTeam": "USA",
-    "Group": "Group B",
+    "Group": "B",
     "HomeTeamScore": null,
     "AwayTeamScore": null
   },
@@ -226,7 +226,7 @@
     "Location": "Estadio Al Janoub",
     "HomeTeam": "Tunisia",
     "AwayTeam": "IC Play-off 1",
-    "Group": "Group D",
+    "Group": "D",
     "HomeTeamScore": null,
     "AwayTeamScore": null
   },
@@ -237,7 +237,7 @@
     "Location": "Estadio Education City",
     "HomeTeam": "Poland",
     "AwayTeam": "Saudi Arabia",
-    "Group": "Group C",
+    "Group": "C",
     "HomeTeamScore": null,
     "AwayTeamScore": null
   },
@@ -248,7 +248,7 @@
     "Location": "Estadio 974",
     "HomeTeam": "France",
     "AwayTeam": "Denmark",
-    "Group": "Group D",
+    "Group": "D",
     "HomeTeamScore": null,
     "AwayTeamScore": null
   },
@@ -259,7 +259,7 @@
     "Location": "Estadio Lusail",
     "HomeTeam": "Argentina",
     "AwayTeam": "Mexico",
-    "Group": "Group C",
+    "Group": "C",
     "HomeTeamScore": null,
     "AwayTeamScore": null
   },
@@ -270,7 +270,7 @@
     "Location": "Estadio Ahmad Bin Ali",
     "HomeTeam": "Japan",
     "AwayTeam": "IC Play-off 2",
-    "Group": "Group E",
+    "Group": "E",
     "HomeTeamScore": null,
     "AwayTeamScore": null
   },
@@ -281,7 +281,7 @@
     "Location": "Estadio Al Thumama",
     "HomeTeam": "Belgium",
     "AwayTeam": "Morocco",
-    "Group": "Group F",
+    "Group": "F",
     "HomeTeamScore": null,
     "AwayTeamScore": null
   },
@@ -292,7 +292,7 @@
     "Location": "Estadio Khalifa Internacional",
     "HomeTeam": "Croatia",
     "AwayTeam": "Canada",
-    "Group": "Group F",
+    "Group": "F",
     "HomeTeamScore": null,
     "AwayTeamScore": null
   },
@@ -303,7 +303,7 @@
     "Location": "Estadio Al Bayt",
     "HomeTeam": "Spain",
     "AwayTeam": "Germany",
-    "Group": "Group E",
+    "Group": "E",
     "HomeTeamScore": null,
     "AwayTeamScore": null
   },
@@ -314,7 +314,7 @@
     "Location": "Estadio Al Janoub",
     "HomeTeam": "Cameroon",
     "AwayTeam": "Serbia",
-    "Group": "Group G",
+    "Group": "G",
     "HomeTeamScore": null,
     "AwayTeamScore": null
   },
@@ -325,7 +325,7 @@
     "Location": "Estadio Education City",
     "HomeTeam": "Korea Republic",
     "AwayTeam": "Ghana",
-    "Group": "Group H",
+    "Group": "H",
     "HomeTeamScore": null,
     "AwayTeamScore": null
   },
@@ -336,7 +336,7 @@
     "Location": "Estadio 974",
     "HomeTeam": "Brazil",
     "AwayTeam": "Switzerland",
-    "Group": "Group G",
+    "Group": "G",
     "HomeTeamScore": null,
     "AwayTeamScore": null
   },
@@ -347,7 +347,7 @@
     "Location": "Estadio Lusail",
     "HomeTeam": "Portugal",
     "AwayTeam": "Uruguay",
-    "Group": "Group H",
+    "Group": "H",
     "HomeTeamScore": null,
     "AwayTeamScore": null
   },
@@ -358,7 +358,7 @@
     "Location": "Estadio Khalifa Internacional",
     "HomeTeam": "Ecuador",
     "AwayTeam": "Senegal",
-    "Group": "Group A",
+    "Group": "A",
     "HomeTeamScore": null,
     "AwayTeamScore": null
   },
@@ -369,7 +369,7 @@
     "Location": "Estadio Al Bayt",
     "HomeTeam": "Netherlands",
     "AwayTeam": "Qatar",
-    "Group": "Group A",
+    "Group": "A",
     "HomeTeamScore": null,
     "AwayTeamScore": null
   },
@@ -380,7 +380,7 @@
     "Location": "Estadio Ahmad Bin Ali",
     "HomeTeam": "Euro Play-off",
     "AwayTeam": "England",
-    "Group": "Group B",
+    "Group": "B",
     "HomeTeamScore": null,
     "AwayTeamScore": null
   },
@@ -391,7 +391,7 @@
     "Location": "Estadio Al Thumama",
     "HomeTeam": "Iran",
     "AwayTeam": "USA",
-    "Group": "Group B",
+    "Group": "B",
     "HomeTeamScore": null,
     "AwayTeamScore": null
   },
@@ -402,7 +402,7 @@
     "Location": "Estadio Al Janoub",
     "HomeTeam": "IC Play-off 1",
     "AwayTeam": "Denmark",
-    "Group": "Group D",
+    "Group": "D",
     "HomeTeamScore": null,
     "AwayTeamScore": null
   },
@@ -413,7 +413,7 @@
     "Location": "Estadio Education City",
     "HomeTeam": "Tunisia",
     "AwayTeam": "France",
-    "Group": "Group D",
+    "Group": "D",
     "HomeTeamScore": null,
     "AwayTeamScore": null
   },
@@ -424,7 +424,7 @@
     "Location": "Estadio 974",
     "HomeTeam": "Poland",
     "AwayTeam": "Argentina",
-    "Group": "Group C",
+    "Group": "C",
     "HomeTeamScore": null,
     "AwayTeamScore": null
   },
@@ -435,7 +435,7 @@
     "Location": "Estadio Lusail",
     "HomeTeam": "Saudi Arabia",
     "AwayTeam": "Mexico",
-    "Group": "Group C",
+    "Group": "C",
     "HomeTeamScore": null,
     "AwayTeamScore": null
   },
@@ -446,7 +446,7 @@
     "Location": "Estadio Ahmad Bin Ali",
     "HomeTeam": "Croatia",
     "AwayTeam": "Belgium",
-    "Group": "Group F",
+    "Group": "F",
     "HomeTeamScore": null,
     "AwayTeamScore": null
   },
@@ -457,7 +457,7 @@
     "Location": "Estadio Al Thumama",
     "HomeTeam": "Canada",
     "AwayTeam": "Morocco",
-    "Group": "Group F",
+    "Group": "F",
     "HomeTeamScore": null,
     "AwayTeamScore": null
   },
@@ -468,7 +468,7 @@
     "Location": "Estadio Khalifa Internacional",
     "HomeTeam": "Japan",
     "AwayTeam": "Spain",
-    "Group": "Group E",
+    "Group": "E",
     "HomeTeamScore": null,
     "AwayTeamScore": null
   },
@@ -479,7 +479,7 @@
     "Location": "Estadio Al Bayt",
     "HomeTeam": "IC Play-off 2",
     "AwayTeam": "Germany",
-    "Group": "Group E",
+    "Group": "E",
     "HomeTeamScore": null,
     "AwayTeamScore": null
   },
@@ -490,7 +490,7 @@
     "Location": "Estadio Al Janoub",
     "HomeTeam": "Ghana",
     "AwayTeam": "Uruguay",
-    "Group": "Group H",
+    "Group": "H",
     "HomeTeamScore": null,
     "AwayTeamScore": null
   },
@@ -501,7 +501,7 @@
     "Location": "Estadio Education City",
     "HomeTeam": "Korea Republic",
     "AwayTeam": "Portugal",
-    "Group": "Group H",
+    "Group": "H",
     "HomeTeamScore": null,
     "AwayTeamScore": null
   },
@@ -512,7 +512,7 @@
     "Location": "Estadio 974",
     "HomeTeam": "Serbia",
     "AwayTeam": "Switzerland",
-    "Group": "Group G",
+    "Group": "G",
     "HomeTeamScore": null,
     "AwayTeamScore": null
   },
@@ -523,7 +523,7 @@
     "Location": "Estadio Lusail",
     "HomeTeam": "Cameroon",
     "AwayTeam": "Brazil",
-    "Group": "Group G",
+    "Group": "G",
     "HomeTeamScore": null,
     "AwayTeamScore": null
   }
