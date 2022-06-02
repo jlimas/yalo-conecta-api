@@ -28,7 +28,7 @@ ALLOWED_HOSTS = ["*"]
 
 CORS_ORIGIN_ALLOW_ALL = True
 
-CSRF_TRUSTED_ORIGINS = ["https://worldcup-api.limas.xyz"]
+CSRF_TRUSTED_ORIGINS = ["https://worldcup-api.limas.xyz", "https://yaloconecta.dev"]
 
 # Application definition
 
