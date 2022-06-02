@@ -18,23 +18,47 @@
 </head>
 
 <body>
-  <h1 class="text-center mb-4">Listado de Boletos</h1>
-  <div class="table-responsive">
-    <table class="table">
-      <tr>
-        <th>Boleto Id</th>
-        <th>Usuario</th>
-        <th>Partido</th>
-        <th>Estadio</th>
-        <th>Fecha Compra</th>
-      </tr>
+  <h1 class="text-center my-4">Listado de Boletos</h1>
+  <div class="table-responsive mx-4 text-center">
+    <table class="table table-sm table-bordered align-middle">
+      <thead class="table-dark">
+        <tr>
+          <th>Boleto Id</th>
+          <th>Usuario</th>
+          <th>Partido</th>
+          <th>Estadio</th>
+          <th>Pago</th>
+          <th>Fecha Compra</th>
+        </tr>
+      </thead>
 
       {% for boleto in boletos %}
       <tr>
         <td>{{boleto.id}}</td>
-        <td>{{boleto.usuario}}</td>
-        <td>{{boleto.partido}}</td>
+        <td>
+          <div>
+            {{boleto.usuario.nombre}}
+          </div>
+          <div class="fw-light">
+            {{boleto.usuario.id}}
+          </div>
+        </td>
+
+        <td>
+          <div>
+            {{boleto.partido}}
+          </div>
+          <div class="fw-light">
+            Grupo {{boleto.partido.grupo}}
+          </div>
+        </td>
+
         <td>{{boleto.partido.estadio}}</td>
+        {% if boleto.pagado %}
+        <td>Pagado</td>
+        {% else %}
+        <td>Pendiente</td>
+        {% endif %}
         <td>{{boleto.fecha_compra}}</td>
       </tr>
       {% endfor %}
