@@ -25,6 +25,7 @@ class Boleto(models.Model):
     usuario = models.ForeignKey(Usuario, on_delete=models.CASCADE)
     partido = models.ForeignKey(Partido, on_delete=models.CASCADE)
     pagado = models.BooleanField(default=False)
+    fecha_compra = models.DateTimeField(auto_now=True)
 
     def __str__(self):
         return f"Boleto {self.usuario} Partido: {self.partido}"

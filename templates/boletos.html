@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="refresh" content="5">
+
+  <title>Yalo Conecta</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <style>
+    * {}
+  </style>
+</head>
+
+<body>
+  <h1 class="text-center mb-4">Listado de Boletos</h1>
+  <div class="table-responsive">
+    <table class="table">
+      <tr>
+        <th>Boleto Id</th>
+        <th>Usuario</th>
+        <th>Partido</th>
+        <th>Estadio</th>
+        <th>Fecha Compra</th>
+      </tr>
+
+      {% for boleto in boletos %}
+      <tr>
+        <td>{{boleto.id}}</td>
+        <td>{{boleto.usuario}}</td>
+        <td>{{boleto.partido}}</td>
+        <td>{{boleto.partido.estadio}}</td>
+        <td>{{boleto.fecha_compra}}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
