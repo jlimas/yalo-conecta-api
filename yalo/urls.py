@@ -6,6 +6,10 @@ from rest_framework.authtoken import views as authtoken_views
 from api import views
 from api import html_views
 
+admin.site.site_header = "Yalo Conecta Admin Panel"
+admin.site.site_title = "Portal"
+admin.site.index_title = "Yalo Conecta"
+
 router = routers.DefaultRouter()
 
 router.register(r"usuarios", views.UsuarioViewSet)
