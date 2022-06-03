@@ -20,5 +20,5 @@ urlpatterns = [
     path("", html_views.index),
     path("boletos", html_views.boletos),
     path("admin/", admin.site.urls),
-    path("v1/", include(router.urls)),
+    path("api/", include(router.urls)),
 ]
