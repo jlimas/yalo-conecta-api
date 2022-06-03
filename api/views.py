@@ -16,7 +16,7 @@ class PartidoViewSet(ApiErrorsMixin, viewsets.ModelViewSet):
     search_fields = ("local", "visitante")
 
 
-class UsuarioViewSet(viewsets.ModelViewSet):
+class UsuarioViewSet(ApiErrorsMixin, viewsets.ModelViewSet):
     queryset = Usuario.objects.all()
     serializer_class = UsuarioSerializer
 
