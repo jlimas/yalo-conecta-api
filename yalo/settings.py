@@ -144,7 +144,7 @@ STATIC_URL = "static/"
 
 STATIC_ROOT = "/var/www/yalo-conecta-api/static"
 
-STATICFILES_DIRS = [BASE_DIR / "static"]
+STATICFILES_DIRS = [BASE_DIR / "assets"]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
