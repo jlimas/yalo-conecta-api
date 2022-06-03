@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,12 +14,20 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   <style>
-    * {}
+    html,
+    body {
+      height: 100vh;
+      background-color: black
+    }
   </style>
 </head>
 
 <body>
-  <h1 class="text-center my-4">Yalo Conecta 2022</h1>
+
+  <div class="h-100 d-flex align-items-center justify-content-center">
+    <img src="{% static 'logo.png' %}" alt="Yalo Conecta 2022">
+  </div>
+
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
