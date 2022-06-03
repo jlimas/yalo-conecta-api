@@ -8,6 +8,7 @@ django-filter==21.1
 django-stubs==1.11.0
 django-stubs-ext==0.4.0
 djangorestframework==3.13.1
+gunicorn==20.1.0
 mypy==0.950
 mypy-extensions==0.4.3
 pathspec==0.9.0
