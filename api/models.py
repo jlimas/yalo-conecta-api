@@ -1,5 +1,6 @@
-from django.db import models
 from datetime import datetime
+
+from django.db import models
 
 
 class Usuario(models.Model):
@@ -25,7 +26,7 @@ class Boleto(models.Model):
     usuario = models.ForeignKey(Usuario, on_delete=models.CASCADE)
     partido = models.ForeignKey(Partido, on_delete=models.CASCADE)
     pagado = models.BooleanField(default=False)
-    fecha_compra = models.DateTimeField(auto_now=True)
+    fecha_compra = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
         return f"Boleto {self.usuario} Partido: {self.partido}"
