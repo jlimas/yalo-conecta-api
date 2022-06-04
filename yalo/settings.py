@@ -92,7 +92,7 @@ REST_FRAMEWORK = {
         "rest_framework.filters.OrderingFilter",
         "rest_framework.filters.SearchFilter",
     ],
-    "DATETIME_FORMAT": "%d/%b/%Y %I:%M %p",
+    "DATETIME_FORMAT": "%d %b, %Y %I:%M %p",
 }
 
 
