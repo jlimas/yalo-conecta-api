@@ -1,7 +1,7 @@
-import environ
 import os
-
 from pathlib import Path
+
+import environ
 
 # Setup Env Vars Casting
 env = environ.Env(
@@ -92,6 +92,7 @@ REST_FRAMEWORK = {
         "rest_framework.filters.OrderingFilter",
         "rest_framework.filters.SearchFilter",
     ],
+    "DATETIME_FORMAT": "%d/%b/%Y %I:%M %p",
 }
 
 
