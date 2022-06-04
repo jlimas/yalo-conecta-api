@@ -24,7 +24,7 @@ SECRET_KEY = "django-insecure-nx-d8$fb=6gs5k16ia&x)lnrh(bpvi@*il32x&dfct@zk=v!6)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env("DEBUG")
 
-ALLOWED_HOSTS = ["https://yaloconecta.dev"]
+ALLOWED_HOSTS = ["yaloconecta.dev"]
 
 CORS_ORIGIN_ALLOW_ALL = True
 
