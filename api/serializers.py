@@ -1,6 +1,7 @@
-from .models import Usuario, Partido, Boleto
 from rest_framework import serializers
 from rest_framework.validators import UniqueTogetherValidator
+
+from api.models import Boleto, Partido, Usuario
 
 
 class UsuarioSerializer(serializers.ModelSerializer):

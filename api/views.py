@@ -1,12 +1,13 @@
 from rest_framework import viewsets
-from .models import Partido, Usuario, Boleto
-from .serializers import (
+
+from api.models import Boleto, Partido, Usuario
+from api.serializers import (
+    BoletoDetailSerializer,
+    BoletoSerializer,
     PartidoSerializer,
     UsuarioSerializer,
-    BoletoSerializer,
-    BoletoDetailSerializer,
 )
-from .utils import ApiErrorsMixin
+from api.utils import ApiErrorsMixin
 
 
 class PartidoViewSet(ApiErrorsMixin, viewsets.ModelViewSet):

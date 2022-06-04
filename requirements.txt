@@ -9,6 +9,7 @@ django-stubs==1.11.0
 django-stubs-ext==0.4.0
 djangorestframework==3.13.1
 gunicorn==20.1.0
+isort==5.10.1
 mypy==0.950
 mypy-extensions==0.4.3
 pathspec==0.9.0

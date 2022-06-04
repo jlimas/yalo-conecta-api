@@ -1,11 +1,9 @@
-from rest_framework import serializers
-from rest_framework import exceptions as rest_exceptions
-
-from rest_framework.views import exception_handler
-from rest_framework.settings import api_settings
-from rest_framework import exceptions
-
 from django.core.exceptions import ValidationError
+from rest_framework import exceptions
+from rest_framework import exceptions as rest_exceptions
+from rest_framework import serializers
+from rest_framework.settings import api_settings
+from rest_framework.views import exception_handler
 
 
 def create_serializer_class(name, fields):
@@ -60,9 +58,9 @@ class ApiErrorsMixin:
             drf_exception_class = self.expected_exceptions[exc.__class__]
             drf_exception = drf_exception_class(get_error_message(exc))
 
-            return super().handle_exception(drf_exception)
+            return super().handle_exception(drf_exception)  # type: ignore
 
-        return super().handle_exception(exc)
+        return super().handle_exception(exc)  # type: ignore
 
 
 class ErrorsFormatter:
@@ -127,7 +125,7 @@ class ErrorsFormatter:
         response_data = {self.ERRORS: [{self.MESSAGE: message, self.CODE: code}]}
 
         if field:
-            response_data[self.ERRORS][self.FIELD] = field
+            response_data[self.ERRORS][self.FIELD] = field  # type: ignore
 
         return response_data
 
@@ -175,7 +173,7 @@ class ErrorsFormatter:
                     field_error = self._unpack(error)
 
                     if not key_is_non_field_errors:
-                        field_error[self.FIELD] = new_field_path
+                        field_error[self.FIELD] = new_field_path  # type: ignore
 
                     current_level_error_list.append(field_error)
             else:
