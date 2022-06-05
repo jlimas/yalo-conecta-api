@@ -24,11 +24,11 @@ SECRET_KEY = "django-insecure-nx-d8$fb=6gs5k16ia&x)lnrh(bpvi@*il32x&dfct@zk=v!6)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env("DEBUG")
 
-ALLOWED_HOSTS = ["yaloconecta.dev"]
+ALLOWED_HOSTS = [env("ALLOWED_HOSTS")]
 
 CORS_ORIGIN_ALLOW_ALL = True
 
-CSRF_TRUSTED_ORIGINS = ["https://yaloconecta.dev"]
+CSRF_TRUSTED_ORIGINS = [env("CSRF_TRUSTED_ORIGINS")]
 
 # Application definition
 

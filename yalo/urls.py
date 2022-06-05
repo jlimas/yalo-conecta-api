@@ -22,6 +22,7 @@ router.register(r"pagos", PaymentViewSet, basename="payments")
 urlpatterns = [
     path("", html_views.index),
     path("boletos", html_views.boletos),
+    path("boleto/<int:boleto_id>/pdf", html_views.generar_boleto_pdf),
     path("admin/", admin.site.urls),
     path("api/", include(router.urls)),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
