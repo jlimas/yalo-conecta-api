@@ -63,6 +63,17 @@ def generate_pdf_ticket(*, boleto: Boleto):
         text=f"{boleto.fecha_compra.strftime('%d %b, %Y %I:%M %p')}",
     )
 
+    # Estatus de Pago
+    p.setFont("Helvetica-Bold", 30)
+    if boleto.pagado:
+        p.setFillColorRGB(0, 255, 0)
+        p.drawCentredString(x_center, 12 * cm, text=f"Pagado")
+    else:
+        p.setFillColorRGB(255, 0, 0)
+        p.drawCentredString(x_center, 12 * cm, text=f"Pago Pendiente")
+
+    p.setFillColorRGB(0, 0, 0)
+    # Usuario
     p.setFont("Helvetica-Bold", 30)
     p.drawCentredString(
         x_center,
