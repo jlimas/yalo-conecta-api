@@ -6,6 +6,7 @@ from reportlab.lib.units import cm
 from reportlab.pdfgen import canvas
 
 from api.models import Boleto
+from yalo.settings import BASE_DIR
 
 
 def process_payment(*, boleto: Boleto):
@@ -26,8 +27,10 @@ def generate_pdf_ticket(*, boleto: Boleto):
 
     # Draw things on the PDF. Here's where the PDF generation happens.
     # See the ReportLab documentation for the full list of functionality.
-    p.setFont("Helvetica-Bold", 45)
-    p.drawCentredString(x_center, 25 * cm, text="Copa del Mundo FIFA")
+    # p.setFont("Helvetica-Bold", 45)
+    # p.drawCentredString(x_center, 25 * cm, text="Copa del Mundo FIFA")
+    p.drawImage(BASE_DIR / "assets/qatar.jpg", 2 * cm, 23 * cm, width=280, height=120)
+    p.drawImage(BASE_DIR / "assets/yalo.png", 13 * cm, 23.5 * cm, width=200, height=90)
 
     match_y = 22 * cm
     p.setFont("Helvetica", 35)
@@ -35,9 +38,7 @@ def generate_pdf_ticket(*, boleto: Boleto):
 
     # Estadio
     p.setFont("Helvetica-Bold", 30)
-    p.drawCentredString(
-        x_center, match_y - (2 * cm), text=f"Estadio {boleto.partido.estadio}"
-    )
+    p.drawCentredString(x_center, match_y - (2 * cm), text=f"{boleto.partido.estadio}")
 
     p.setFont("Helvetica", 40)
     p.drawCentredString(x_center, match_y - (4 * cm), text=str(boleto.partido))
