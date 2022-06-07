@@ -7,7 +7,7 @@ from rest_framework import status
 
 from api.services import generate_pdf_ticket
 
-from .models import Boleto
+from .models import Boleto, Partido
 
 
 def index(request):
@@ -17,6 +17,14 @@ def index(request):
 def boletos(request):
     boletos = Boleto.objects.order_by("-fecha_compra")
     return render(request, "boletos.html", {"boletos": boletos})
+
+
+def equipos(request):
+    equipos = set()
+    for partido in Partido.objects.all():
+        equipos.add(partido.local)
+        equipos.add(partido.visitante)
+    return render(request, "equipos.html", {"equipos": sorted(equipos)})
 
 
 @csrf_exempt
