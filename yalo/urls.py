@@ -5,7 +5,13 @@ from django.urls import include, path
 from rest_framework import routers
 
 from api import html_views
-from api.views import MatchViewSet, PaymentViewSet, TicketViewSet, UserViewSet
+from api.views import (
+    MatchViewSet,
+    PaymentViewSet,
+    TeamsViewSet,
+    TicketViewSet,
+    UserViewSet,
+)
 
 admin.site.site_header = "Yalo Conecta Admin Panel"
 admin.site.site_title = "Portal"
@@ -17,6 +23,7 @@ router.register(r"usuarios", UserViewSet, basename="users")
 router.register(r"partidos", MatchViewSet, basename="matches")
 router.register(r"boletos", TicketViewSet, basename="tickets")
 router.register(r"pagos", PaymentViewSet, basename="payments")
+router.register(r"equipos", TeamsViewSet, basename="teams")
 
 
 urlpatterns = [

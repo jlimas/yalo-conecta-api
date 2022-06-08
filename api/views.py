@@ -10,7 +10,7 @@ from api.serializers import (
     TicketSerializer,
     UserSerializer,
 )
-from api.services import process_payment
+from api.services import get_teams_sorted_list, process_payment
 from api.utils import ApiErrorsMixin
 
 
@@ -45,3 +45,8 @@ class PaymentViewSet(ApiErrorsMixin, ViewSet):
         boleto = serializer.validated_data["boleto"]  # type: ignore
         payment = process_payment(boleto=boleto)
         return Response(payment, status.HTTP_200_OK)
+
+
+class TeamsViewSet(ApiErrorsMixin, ViewSet):
+    def list(self, request):
+        return Response(get_teams_sorted_list(), status.HTTP_200_OK)

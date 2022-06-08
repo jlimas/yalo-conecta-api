@@ -7,7 +7,7 @@ from reportlab.pdfbase.pdfmetrics import registerFont
 from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.pdfgen import canvas
 
-from api.models import Boleto
+from api.models import Boleto, Partido
 from yalo.settings import BASE_DIR
 
 
@@ -16,6 +16,14 @@ def process_payment(*, boleto: Boleto):
     boleto.save()
 
     return {"pagoId": shortuuid.uuid()}
+
+
+def get_teams_sorted_list():
+    equipos = set()
+    for partido in Partido.objects.all():
+        equipos.add(partido.local)
+        equipos.add(partido.visitante)
+    return sorted(equipos)
 
 
 def generate_pdf_ticket(*, boleto: Boleto):

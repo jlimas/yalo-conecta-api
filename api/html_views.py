@@ -5,9 +5,9 @@ from django.views.decorators.csrf import csrf_exempt
 from django.views.decorators.http import require_http_methods
 from rest_framework import status
 
-from api.services import generate_pdf_ticket
+from api.services import generate_pdf_ticket, get_teams_sorted_list
 
-from .models import Boleto, Partido
+from .models import Boleto
 
 
 def index(request):
@@ -20,11 +20,7 @@ def boletos(request):
 
 
 def equipos(request):
-    equipos = set()
-    for partido in Partido.objects.all():
-        equipos.add(partido.local)
-        equipos.add(partido.visitante)
-    return render(request, "equipos.html", {"equipos": sorted(equipos)})
+    return render(request, "equipos.html", {"equipos": get_teams_sorted_list()})
 
 
 @csrf_exempt
