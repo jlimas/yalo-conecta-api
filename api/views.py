@@ -1,3 +1,5 @@
+from django.contrib.postgres.search import SearchVector
+from django.db.models import Q
 from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.viewsets import ModelViewSet, ViewSet
@@ -18,7 +20,16 @@ class MatchViewSet(ApiErrorsMixin, ModelViewSet):
     queryset = Partido.objects.all()
     serializer_class = MatchSerializer
     ordering = "fecha"
-    search_fields = ("local", "visitante")
+
+    def get_queryset(self):
+        queryset = Partido.objects.all()
+        pais = self.request.query_params.get("pais")
+        if pais is not None:
+            queryset = Partido.objects.annotate(
+                pais=SearchVector("local", "visitante", config="spanish")
+            )
+            queryset = queryset.filter(pais=pais)
+        return queryset
 
 
 class UserViewSet(ApiErrorsMixin, ModelViewSet):
