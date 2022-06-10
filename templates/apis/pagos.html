@@ -1,0 +1,55 @@
+<!-- prettier-ignore -->
+{% extends 'apis/base-template.html' %} 
+
+{% block title %} 
+Pagos
+{% endblock %} 
+
+{% block content %}
+<pre><code>POST /api/pagos (Pago) 
+
+Pago {
+  usuario: str
+  boleto: str
+  tarjeta: str
+  nip: str
+}
+
+Para realizar el pago de un boleto se envia la informacion de la siguiente manera.
+
+{
+    "usuario": "123",
+    "boleto": "2",
+    "tarjeta": "1234 1234 1234 1234",
+    "nip": "1234"
+}
+
+Obtendremos una respuesta 200 OK con el identificador del pago.
+
+{
+  "pagoId": "6MBPSxczc3qDGs5FQJehWz"
+}
+
+En caso de errores con el pago tendriamos una respuesta como la siguiente.
+
+{
+  "errors": [
+    {
+      "message": "Este boleto ya se encuentra pagado",
+      "code": "invalid"
+    }
+  ]
+}
+
+El NIP debe ser igual a los ultimos 4 digitos de la tarjeta de credito (simulando seguridad en el pago).
+
+{
+  "errors": [
+    {
+      "message": "El nip es invalido para esta tarjeta",
+      "code": "invalid"
+    }
+  ]
+}
+</code></pre>
+{% endblock %}

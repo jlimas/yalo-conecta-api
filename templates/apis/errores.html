@@ -1,0 +1,34 @@
+<!-- prettier-ignore -->
+{% extends 'apis/base-template.html' %} 
+
+{% block title %} 
+Errores
+{% endblock %} 
+
+{% block content %}
+<pre><code>Todos los errores de la API tienen la siguiente estructura.
+Pueden venir N numero de errores dentro del arreglo errors.
+
+{
+  "errors": [
+    {
+      "message": string
+      "code": string,
+      "field": string
+    }
+  ]
+}
+
+Ejemplo de respuesta de error cuando se intenta registrar un usuario que ya existe
+
+{
+  "errors": [
+    {
+      "message": "Ya existe un/a usuario con este/a id.",
+      "code": "unique",
+      "field": "id"
+    }
+  ]
+}
+</code></pre>
+{% endblock %}

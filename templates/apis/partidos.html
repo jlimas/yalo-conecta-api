@@ -1,0 +1,34 @@
+<!-- prettier-ignore -->
+{% extends 'apis/base-template.html' %} 
+
+{% block title %} 
+Partidos
+{% endblock %} 
+
+{% block content %}
+<pre><code>GET /api/partidos (Partido[]) 
+
+Esta API tiene un parametro de busqueda por pais
+Ej. GET /api/partidos/?pais=Mexico
+
+Partido {
+  id: int
+  local: str
+  visitante: str
+  estadio: str
+  grupo: str
+  fecha: str
+}
+
+[
+  {
+    "id": 2,
+    "local": "Senegal",
+    "visitante": "Holanda",
+    "estadio": "Estadio Al Thumama",
+    "grupo": "A",
+    "fecha": "21 Nov, 2022 10:00 AM"
+  }
+]
+</code></pre>
+{% endblock %}

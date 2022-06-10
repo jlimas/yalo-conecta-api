@@ -1,0 +1,76 @@
+<!-- prettier-ignore -->
+{% extends 'apis/base-template.html' %} 
+
+{% block title %} 
+Boletos
+{% endblock %} 
+
+{% block content %}
+<pre><code>POST /api/boletos (ComprarBoleto)
+GET /api/boletos (Boleto[])
+
+Esta API tiene un parametro de busqueda por usuario
+Ej. GET /api/boletos/?search=5216561230000
+
+CompraBoleto {
+  usuario: str
+  partido: str
+}
+
+Boleto {
+  id: int
+  pagado: bool
+  fecha_compra: str
+  usuario: {
+    id: str
+    nombre: str
+  }
+  partido: {
+    id: int
+    local: str
+    visitante: str
+    estadio: str
+    grupo: str
+    fecha: str
+  }
+}
+
+Para la compra de un boleto se envia el identificador unico de usuario y el identificador del partido.
+
+Ej. Para comprar un boleto para el partido con ID 1 con el usuario 5216561230000.
+{
+  "usuario": "5216561230000",
+  "partido": "1"
+}
+
+En caso de que la compra sea exitosa (usuario y partido valido) la API regresa un codigo 201 Created.
+
+{
+  "id": 1,
+  "pagado": false,
+  "fecha_compra": "10 Jun, 2022 02:49 PM",
+  "usuario": "5216561230000",
+  "partido": 1
+}
+
+En caso de que el usuario ya tenga un boleto para este juego la API regresa un codigo 400 Bad Request.
+
+{
+  "errors": [
+    {
+      "message": "este usuario ya tiene boleto para este juego",
+      "code": "unique"
+    }
+  ]
+}
+
+
+
+Estructura de la respuesta.
+
+{
+  "id": "5216561230000",
+  "nombre": "Usuario Random #1"
+}
+</code></pre>
+{% endblock %}

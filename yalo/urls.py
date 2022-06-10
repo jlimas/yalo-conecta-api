@@ -30,6 +30,7 @@ urlpatterns = [
     path("", html_views.index),
     path("boletos", html_views.boletos),
     path("equipos", html_views.equipos),
+    path("documentacion", html_views.documentacion),
     path("boleto/<int:boleto_id>/pdf", html_views.generar_boleto_pdf),
     path("admin/", admin.site.urls),
     path("api/", include(router.urls)),

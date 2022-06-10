@@ -1,0 +1,33 @@
+<!-- prettier-ignore -->
+{% extends 'apis/base-template.html' %} 
+
+{% block title %} 
+Usuarios
+{% endblock %} 
+
+{% block content %}
+<pre><code>POST /api/usuarios (Usuario)
+GET /api/usuarios (Usuario[])
+GET /api/usuarios/{id} (Usuario)
+
+Usuario {
+  id: string,
+  nombre: string
+}
+
+[
+  {
+    "id": "6561230001",
+    "nombre": "Usuario Random #1"
+  },
+  {
+    "id": "6561230002",
+    "nombre": "Usuario Random #2"
+  },
+  {
+    "id": "6561230003",
+    "nombre": "Usuario Random #3"
+  },
+]
+</code></pre>
+{% endblock %}
