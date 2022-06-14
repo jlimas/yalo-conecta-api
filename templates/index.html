@@ -18,9 +18,17 @@
 
 <body class="vh-100 bg-black">
 
-  <div class="h-100 d-flex align-items-center justify-content-center">
-    <img src="{% static 'logo.png' %}" alt="Yalo Conecta 2022">
+  <div class="h-100 d-flex flex-column align-items-center justify-content-center">
+      <img src="{% static 'logo.png' %}" alt="Yalo Conecta 2022">
+
+    <div class="text-light d-flex justify-content-evenly w-75">
+      <a href="{% url 'documentacion' %}" class="btn btn-light">Documentacion API</a>
+      <a href="{% url 'equipos' %}" class="btn btn-light">Equipos/Paises</a>
+      <a href="{% url 'boletos' %}" class="btn btn-light">Boletos Vendidos</a>
+      <a href="{% url 'recursos' %}" class="btn btn-light">Recursos</a>
+    </div>
   </div>
+
 
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
