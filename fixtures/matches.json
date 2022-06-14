@@ -82,7 +82,7 @@
     "DateUtc": "2022-11-22 19:00:00Z",
     "Location": "Estadio Al Janoub",
     "HomeTeam": "Francia",
-    "AwayTeam": "IC Play-off 1",
+    "AwayTeam": "Australia",
     "Group": "D",
     "HomeTeamScore": null,
     "AwayTeamScore": null
@@ -225,7 +225,7 @@
     "DateUtc": "2022-11-26 10:00:00Z",
     "Location": "Estadio Al Janoub",
     "HomeTeam": "Tunez",
-    "AwayTeam": "IC Play-off 1",
+    "AwayTeam": "Australia",
     "Group": "D",
     "HomeTeamScore": null,
     "AwayTeamScore": null
@@ -400,7 +400,7 @@
     "RoundNumber": 3,
     "DateUtc": "2022-11-30 15:00:00Z",
     "Location": "Estadio Al Janoub",
-    "HomeTeam": "IC Play-off 1",
+    "HomeTeam": "Australia",
     "AwayTeam": "Dinamarca",
     "Group": "D",
     "HomeTeamScore": null,
