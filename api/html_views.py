@@ -1,4 +1,5 @@
 import shortuuid
+from django.contrib.auth.models import User
 from django.http.response import FileResponse, HttpResponse, JsonResponse
 from django.shortcuts import redirect, render
 from django.views.decorators.csrf import csrf_exempt
@@ -30,7 +31,8 @@ def caso_de_uso(request):
 
 
 def boletos(request):
-    boletos = Boleto.objects.order_by("-fecha_compra").prefetch_related("tenant")
+    testing_user = User.objects.filter(username="testing").first()
+    boletos = Boleto.objects.order_by("-fecha_compra").exclude(tenant=testing_user)
     return render(request, "boletos.html", {"boletos": boletos})
 
 
