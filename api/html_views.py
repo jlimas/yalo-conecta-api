@@ -25,7 +25,7 @@ def recursos(request):
 
 
 def boletos(request):
-    boletos = Boleto.objects.order_by("-fecha_compra")
+    boletos = Boleto.objects.order_by("-fecha_compra").prefetch_related("tenant")
     return render(request, "boletos.html", {"boletos": boletos})
 
 

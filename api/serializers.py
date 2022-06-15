@@ -7,9 +7,13 @@ from api.models import Boleto, Partido, Usuario
 
 
 class UserSerializer(ModelSerializer):
+    tenant = serializers.HiddenField(
+        default=serializers.CurrentUserDefault(),
+    )
+
     class Meta:
         model = Usuario
-        fields = "__all__"
+        fields = ("id", "nombre", "tenant")
 
 
 class MatchSerializer(ModelSerializer):
@@ -19,6 +23,10 @@ class MatchSerializer(ModelSerializer):
 
 
 class TicketSerializer(ModelSerializer):
+    tenant = serializers.HiddenField(
+        default=serializers.CurrentUserDefault(),
+    )
+
     class Meta:
         model = Boleto
         fields = "__all__"

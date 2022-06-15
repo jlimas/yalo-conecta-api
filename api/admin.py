@@ -1,10 +1,12 @@
 from django.contrib import admin
+
 from api import models
 
 
 @admin.register(models.Usuario)
 class UsuarioAdmin(admin.ModelAdmin):
-    list_display = ("id", "nombre")
+    list_filter = ("tenant",)
+    list_display = ("id", "nombre", "tenant")
 
 
 @admin.register(models.Partido)
@@ -16,4 +18,5 @@ class PartidoAdmin(admin.ModelAdmin):
 
 @admin.register(models.Boleto)
 class BoletoAdmin(admin.ModelAdmin):
-    list_display = ("id", "usuario", "partido")
+    list_filter = ("tenant",)
+    list_display = ("id", "usuario", "partido", "pagado", "tenant")
