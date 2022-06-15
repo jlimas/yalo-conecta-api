@@ -30,6 +30,12 @@ def caso_de_uso(request):
     )
 
 
+def studio(request):
+    return redirect(
+        "https://yalo.notion.site/Yalo-Studio-Manual-Public-7674b553f4a74a7180ef57cf7898f10e"
+    )
+
+
 def boletos(request):
     testing_user = User.objects.filter(username="testing").first()
     boletos = Boleto.objects.order_by("-fecha_compra").exclude(tenant=testing_user)
