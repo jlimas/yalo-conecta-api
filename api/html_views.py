@@ -4,10 +4,9 @@ from django.shortcuts import redirect, render
 from django.views.decorators.csrf import csrf_exempt
 from django.views.decorators.http import require_http_methods
 from rest_framework import status
+
 from api.models import Boleto
-
 from api.services import generate_pdf_ticket, get_teams_sorted_list
-
 
 
 def index(request):
@@ -21,6 +20,12 @@ def documentacion(request):
 def recursos(request):
     return redirect(
         "https://drive.google.com/drive/folders/19txLRNZkf3gbpGleDjxeFJW4LuWBOuyk"
+    )
+
+
+def caso_de_uso(request):
+    return redirect(
+        "https://drive.google.com/file/d/1K8-RyR7CdwGteQf79Y-KDg0jT7jfe97Z/view?usp=sharing"
     )
 
 
@@ -39,7 +44,9 @@ def generar_boleto_pdf(request, boleto_id):
     try:
         boleto = Boleto.objects.get(pk=boleto_id)
         if not boleto.pagado:
-            return JsonResponse({"error": "boleto no pagado"}, status=status.HTTP_400_BAD_REQUEST)
+            return JsonResponse(
+                {"error": "boleto no pagado"}, status=status.HTTP_400_BAD_REQUEST
+            )
 
         file = generate_pdf_ticket(boleto=boleto)
         return FileResponse(
