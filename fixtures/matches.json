@@ -115,7 +115,7 @@
     "DateUtc": "2022-11-23 16:00:00Z",
     "Location": "Estadio Al Thumama",
     "HomeTeam": "España",
-    "AwayTeam": "IC Play-off 2",
+    "AwayTeam": "Costa Rica",
     "Group": "E",
     "HomeTeamScore": null,
     "AwayTeamScore": null
@@ -269,7 +269,7 @@
     "DateUtc": "2022-11-27 10:00:00Z",
     "Location": "Estadio Ahmad Bin Ali",
     "HomeTeam": "Japon",
-    "AwayTeam": "IC Play-off 2",
+    "AwayTeam": "Costa Rica",
     "Group": "E",
     "HomeTeamScore": null,
     "AwayTeamScore": null
@@ -477,7 +477,7 @@
     "RoundNumber": 3,
     "DateUtc": "2022-12-01 19:00:00Z",
     "Location": "Estadio Al Bayt",
-    "HomeTeam": "IC Play-off 2",
+    "HomeTeam": "Costa Rica",
     "AwayTeam": "Alemania",
     "Group": "E",
     "HomeTeamScore": null,
