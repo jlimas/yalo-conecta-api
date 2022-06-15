@@ -42,7 +42,7 @@ class TicketSerializer(ModelSerializer):
 class TicketDetailSerializer(ModelSerializer):
     class Meta:
         model = Boleto
-        fields = "__all__"
+        exclude = ("tenant",)
         depth = 1
 
 

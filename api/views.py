@@ -42,6 +42,9 @@ class TicketViewSet(ApiErrorsMixin, ModelViewSet):
     ordering = "partido__fecha"
     search_fields = ("usuario__id",)
 
+    def get_queryset(self):
+        return Boleto.objects.filter(tenant=self.request.user)
+
     def get_serializer_class(self):
         if self.request.method == "GET":
             return TicketDetailSerializer
