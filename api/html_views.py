@@ -1,5 +1,5 @@
 import shortuuid
-from django.http.response import FileResponse, HttpResponse
+from django.http.response import FileResponse, HttpResponse, JsonResponse
 from django.shortcuts import redirect, render
 from django.views.decorators.csrf import csrf_exempt
 from django.views.decorators.http import require_http_methods
@@ -38,6 +38,9 @@ def equipos(request):
 def generar_boleto_pdf(request, boleto_id):
     try:
         boleto = Boleto.objects.get(pk=boleto_id)
+        if not boleto.pagado:
+            return JsonResponse({"error": "boleto no pagado"}, status=status.HTTP_400_BAD_REQUEST)
+
         file = generate_pdf_ticket(boleto=boleto)
         return FileResponse(
             file, as_attachment=True, filename=f"{shortuuid.uuid()}.pdf"
