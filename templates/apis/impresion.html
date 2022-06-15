@@ -1,0 +1,21 @@
+<!-- prettier-ignore -->
+{% extends 'apis/base-template.html' %} 
+
+{% block title %} 
+Impresion Boleto
+{% endblock %} 
+
+{% block content %}
+<pre><code>GET /boleto/{id}/pdf
+
+Este endpoint regresa un archivo PDF con la informacion del boleto.
+
+En caso de que el boleto no este pagado regresa un status 400 Bad Request
+
+{
+  "error": "boleto no pagado"
+}
+
+En caso de que el boleto no exista regresa un status 404 Not Found
+</code></pre>
+{% endblock %}
