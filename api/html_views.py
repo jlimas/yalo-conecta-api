@@ -4,10 +4,10 @@ from django.shortcuts import redirect, render
 from django.views.decorators.csrf import csrf_exempt
 from django.views.decorators.http import require_http_methods
 from rest_framework import status
+from api.models import Boleto
 
 from api.services import generate_pdf_ticket, get_teams_sorted_list
 
-from .models import Boleto
 
 
 def index(request):
